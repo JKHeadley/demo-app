@@ -1,4 +1,4 @@
-import { Box, Button, TextField } from "@mui/material";
+import { Box, Button, TextField, Typography } from "@mui/material";
 import React from "react";
 
 export default function DemoForm() {
@@ -90,17 +90,13 @@ export default function DemoForm() {
         <Box
           sx={{
             border: "1px solid",
-            p: 2,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
+            px: 2,
             width: "100%",
             height: "100%",
             overflow: "scroll",
           }}
         >
-          {fetchedData}
+          <Typography> {fetchedData} </Typography>
         </Box>
       </Box>
     </Box>
